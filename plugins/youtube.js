@@ -22,7 +22,7 @@ inrl({
         if (!url[0]) {
             const result = await searchYT(match);
             if (!result[0]) return await m.send('_not found_');
-            let msg = "YT SONG DOWNLOADER",
+            let msg = "YT SONG DOWNLOADER tasmee khan",
                 arr = [];
             return await m.send(GenListMessage(msg, result));
         } else {
@@ -47,7 +47,7 @@ inrl({
         if (!url[0]) {
             const result = await searchYT(match);
             if (!result[0]) return await m.send('_not found_');
-            let msg = "YT VIDEO DOWNLOADER";
+            let msg = "YT VIDEO DOWNLOADER tasmee khan";
             return await m.send(GenListMessage(msg, result));
         } else {
             const ress = await downloadMp4(url[0]);
@@ -67,7 +67,7 @@ inrl({
 }, async (m, conn, match) => {
     if (!m.quoted || !m.quoted.fromMe) return;
     try {
-        if (m.client.body.includes("YT VIDEO DOWNLOADER")) {
+        if (m.client.body.includes("YT VIDEO DOWNLOADER  tasmee khan")) {
             match = m.client.body.replace("YT VIDEO DOWNLOADER", "").trim();
             await m.send(`*_downloading_*\n*_${match}_*`);
             const result = await searchYT(match, true);
@@ -76,8 +76,8 @@ inrl({
                 video: ress,
                 mimetype: 'video/mp4'
             });
-        } else if (m.client.body.includes("YT SONG DOWNLOADER")) {
-            match = m.client.body.replace("YT SONG DOWNLOADER", "").trim();
+        } else if (m.client.body.includes("YT SONG DOWNLOADER tasmee khan")) {
+            match = m.client.body.replace("YT SONG DOWNLOADER tasmee khan", "").trim();
             await m.send(`*_downloading_*\n${match}`);
             const result = await searchYT(match, true);
             const ress = await downloadMp3(result[0]);
