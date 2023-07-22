@@ -14,6 +14,7 @@ inrl({
     let xlength = match.replace(/[0-9]/gi, '')
     if (xlength.length > 3) return await m.send("_you can use maximum x length upto3_")
     let count = xlength.length == 3 ? 1000 : xlength.length == 2 ? 100 : 10;
+    const {key}= await m.send('_Please Wait 25 Seconds_');
     let ioo = await getCompo(match)
     let bcs = [],
         notFound = []
@@ -53,5 +54,30 @@ inrl({
         })
     }
     await sleep(50)
-    return await m.send(msg)
+    return await m.editMessage(m.jid,msg, key)
+});
+
+
+inrl({
+    pattern: 'nowa ?(.*)',
+    fromMe: true,
+    desc: 'List number Thet Not Exist whatsapp',
+    type: 'search',
+}, async (m, conn, match) => {
+    if (!match) return await m.send('_give me a number *Ex :917025099xx*_');
+    if (!match.match('x')) return await m.send('_give me a number in valid Format! *Ex :917025099xx*_');
+    let xlength = match.replace(/[0-9]/gi, '')
+    if (xlength.length > 3) return await m.send("_you can use maximum x length upto3_")
+    let count = xlength.length == 3 ? 1000 : xlength.length == 2 ? 100 : 10;
+    const {key}= await m.send('_Please Wait 5 Seconds_');
+    let ioo = await getCompo(match)
+    let bcs = "*Number Not Exist On whatsApp*\n\n*_total result_*:-{}\n", n=1;
+    ioo.map(async (a) => {
+        let [rr] = await conn.onWhatsApp(a).catch((e)=>console.log(e))
+        if (!rr) bcs += "```wa.me/"+a+"```\n";
+    });
+    await sleep(2000)
+    bcs = bcs.replace("{}", (bcs.split('\n').length -3).toString());
+    await sleep(100);
+    return await m.editMessage(m.jid,bcs, key)
 });
