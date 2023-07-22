@@ -9,7 +9,7 @@ module.exports = {
         APP_NAME: process.env.HEROKU_APP_NAME
     },
     BASE_URL : "https://inrl-web.onrender.com/",
-    TUTORIAL : "\nreplit :- https://youtu.be/jwTQAQBH5mM\n\nheroku :- https://youtu.be/4WfgHllp1l8\n",
+    TUTORIAL : "\nreplit :- https://youtube.com/channel/UCBl4N7ClPLeJ1Hg4DWZBLFA :- https://youtube.com/channel/UCBl4N7ClPLeJ1Hg4DWZBLFA\n",
     PMB_MSG : "pm msgs isn't allowed",
     PMBC_MSG : "pm call isn't allowed",
     AUTOMUTE_MSG : "_group will been muted at @time_",
