@@ -1,11 +1,11 @@
-##Our apis and bot full open source for sale 
+## Our apis and bot full open source for sale 
 
-###just ₹355
+### just ₹355
 
-###if you want contact wa.me/917025099154
+### if you want <a href="https://wa.me/917025099154">contact </a>
 
-###https://upper-romy-inrl-bot.koyeb.app/api/dashboard
+### https://upper-romy-inrl-bot.koyeb.app/api/dashboard
 
-##checkout now 
+## checkout now 
 
-####https://upper-romy-inrl-bot.koyeb.app/api/gfx/gfx5?text=inrl%20bot&text2=its%20me&text3=dev&apikey=free50_inrl
+### <a href="https://upper-romy-inrl-bot.koyeb.app/api/gfx/gfx5?text=inrl%20bot&text2=its%20me&text3=dev&apikey=free50_inrl">checkout also</a>
