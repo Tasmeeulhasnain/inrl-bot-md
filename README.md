@@ -1,4 +1,4 @@
-## Our apis and bot full open source for sale 
+## Our apis and bot full open source for sale (qr&pair) includes
 
 ### just ₹355
 
