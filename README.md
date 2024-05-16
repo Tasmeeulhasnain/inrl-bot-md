@@ -1,3 +1,5 @@
+# note- iam selling INRL open code not other bot sc, some. nigga said i sele other bot codes
+
 ## Our apis and bot full open source for sale (qr&pair) includes
 
 ### just ₹355
